@@ -1,5 +1,5 @@
 set -eu
-#exec 2>/dev/null
+exec 2>/dev/null
 
 export SAVE_ARTSHACK_MISSION_FORM_ID="251286346098162"
 
