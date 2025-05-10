@@ -6,7 +6,7 @@ export default function Petition() {
       <h1 className={styles.sectionTitle}>Sign our Petition</h1>
       <div>
         <iframe id="JotFormIFrame-251286346098162" title="Save Artshack's Mission"
-          allowtransparency="true" allow="fullscreen" allowFullScreen="true"
+          allowtransparency="true" allow="fullscreen" allowFullScreen
           src="https://form.jotform.com/251286346098162" frameBorder="0"
           className={styles.jotformIframe}
           scrolling="yes">
