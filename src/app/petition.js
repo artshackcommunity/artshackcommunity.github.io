@@ -12,7 +12,7 @@ export default function Petition() {
           scrolling="yes">
         </iframe>
         <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js' async></script>
-        <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-251286346098162']", "https://form.jotform.com/")</script>
+        {/* <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-251286346098162']", "https://form.jotform.com/")</script> */}
       </div>
     </div>
   );
