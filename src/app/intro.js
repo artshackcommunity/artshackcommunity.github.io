@@ -14,7 +14,7 @@ export default function Intro() {
       </p>
       <p className={styles.introCopy}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       <ul className={styles.introList}>
-        <li><a href="/index">Timeline of Events</a></li>
+        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSc_E2yEf8Vut1CGfx4tQD2mTBAJyVD1e_S5CEcQwbEm-gXIqQ/viewform">Tell Us About Your Artshack Experience</a></li>
         <li><a href="https://opencollective.com/artshack-organizers-mutual-aid">Donate to Mutual Aid Fund</a></li>
         <li><a href="/index">Sign Our Petition</a></li>
         <li><a href={emailTemplate}>Email Mckendree Key & the Board</a></li>
