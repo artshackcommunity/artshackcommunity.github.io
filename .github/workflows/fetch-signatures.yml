@@ -1,0 +1,32 @@
+name: Fetch Signatures from Save Artshack's Mission Form
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    name: Fetch Signatures
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Check
+        run: |
+          jq --version
+          curl --version
+
+      - name: Fetch Signatures
+        shell: bash
+        run: ./scripts/fetch_signatures.sh
+        env:
+          JOTFORM_API_KEY: ${{ secrets.JOTFORM_API_KEY }}
+
+      - name: Commit and Push Changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Update signatures.json"
+          file_pattern: public/signatures.json

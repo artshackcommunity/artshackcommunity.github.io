@@ -34,7 +34,7 @@ function renderSignatures(signatures) {
   return signatures.map((signature) => (
       <tr key={signature.name}>
         <td>{signature.name}</td>
-        <td>{signature.relationship}</td>
+        <td>{signature.role}</td>
         <td>{signature.reason}</td>
       </tr>
   ));
