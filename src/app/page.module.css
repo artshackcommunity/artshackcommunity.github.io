@@ -1,0 +1,205 @@
+
+.container {
+  padding: 10em 17em;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.introContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+.introCopyContainer {
+  width: 50%;
+}
+
+.hero {
+  margin-bottom: 2em;
+}
+
+.quote {
+  grid-area: quote;
+  padding-bottom: 2em;
+  font-size: 1.75rem;
+  font-weight: 600;
+  font-style: normal;
+  font-kerning: normal;
+  line-height: 37px;
+}
+
+.introCopy {
+  grid-area: introCopy;
+  padding-bottom: 2em;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-style: normal;
+  font-kerning: normal;
+  line-height: 33px;
+}
+
+.introList {
+  padding-bottom: 2em;
+  grid-area: introList;
+  list-style: none;
+  font-size: 1.5rem;
+  line-height: 33px;
+}
+
+.introList li {
+  margin-bottom: 10px;
+}
+
+.townHallContainer {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.townHallGraphic {
+  width: 100%;
+  transform: scale(1.75)
+}
+
+.demandsContainer {
+  margin-bottom: 4em;
+}
+
+.sectionTitle {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.demandsList {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.demandsList li {
+  background-image: url('/PinkSquare.svg');
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 2em;
+}
+
+.demandsList h2 {
+  margin-bottom: .75em;
+}
+
+.demandsList p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.petitionContainer {
+  margin-bottom: 4em;
+}
+
+.jotformIframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.signaturesTable {
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 0;
+  border-spacing: 0;
+}
+
+.signaturesTable th {
+  text-align: center;
+  padding: 1em;
+  border-bottom: 1px solid #000;
+}
+
+.signaturesTable th:not(:last-child) {
+  border-right: 1px solid #000;
+}
+
+.signaturesTable td {
+  min-width: 200px;
+  text-align: center;
+  padding: 1em;
+  border-bottom: 1px solid #000;
+
+}
+
+.signaturesTable td:not(:last-child) {
+  border-right: 1px solid #000;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    padding: 1em 2em;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .hero {
+    /* transform: scale(0.5); */
+    width: 110%;
+    align-self: center;;
+  }
+
+  .quote {
+    padding-bottom: 1em;
+  }
+
+  .introContainer {
+    flex-direction: column;
+  }
+
+  .introCopyContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .introList {
+    margin-bottom: 1em;
+  }
+
+  .townHallContainer {
+    width: 100%;
+    margin-bottom: 10em;
+  }
+
+  .townHallGraphic {
+    width: 100%;
+    transform: scale(1.5);
+  }
+
+  .signaturesContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .signaturesTable {
+    width: 110%;
+  }
+
+  .signaturesTable td {
+    min-width: 0;
+  }
+}
