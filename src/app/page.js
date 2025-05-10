@@ -5,10 +5,12 @@ import Signatures from './signatures';
 import styles from './page.module.css'
 
 export default function Page() {
-  return <div className={styles.container}>
-    <Intro/>
-    <Demands/>
-    <Petition />
-    <Signatures/>
-  </div>
+
+
+    return <div className={styles.container}>
+        <Intro/>
+        <Demands/>
+        <Petition/>
+        <Signatures />
+    </div>
 }
