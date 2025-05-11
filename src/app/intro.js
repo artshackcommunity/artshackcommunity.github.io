@@ -42,7 +42,7 @@ export default function Intro() {
             <li><a href="https://opencollective.com/artshack-organizers-mutual-aid">Donate to Mutual Aid Fund</a></li>
             <li><a href="#petition">Sign Our Petition</a></li>
             <li><a href={emailTemplate}>Email McKendree Key & the Board</a></li>
-            <li><a href="#what-the-mission-means-to-our-community">What the Mission Means to Our Community</a></li>
+            <li><a href="#what-the-mission-means-to-our-community">See What the Mission Means to Our Community</a></li>
           </ul>
         </div>
         <div className={styles.townHallContainer}>
