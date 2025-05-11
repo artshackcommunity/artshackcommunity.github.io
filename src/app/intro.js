@@ -4,7 +4,7 @@ import Image from 'next/image'
 import styles from './page.module.css'
 
 export default function Intro() {
-  const recipients = "mckendree@artshackbrooklyn.org,beccagreen@gmail.com,jasonshure@gmail.com,"
+  const recipients = "mckendree@artshackbrooklyn.org,beccagreen@gmail.com,jasonshure@gmail.com,nicholasohstudio@gmail.com"
   const emailSubject = "Protect Artshack's Mission!"
   const emailBody = "I stand with the community of Artshack working to protect Artshack’s Mission. We demand:\n" +
       "\n1. No restructuring without community input\nIncluding staff firings or dissolving of programs\n" +
