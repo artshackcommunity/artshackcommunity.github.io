@@ -3,7 +3,7 @@ import styles from './page.module.css'
 export default function Petition() {
   return (
     <div className={styles.petitionContainer}>
-      <h1 className={styles.sectionTitle}>Sign our Petition</h1>
+      <h1 className={styles.sectionTitle} id="petition">Sign our Petition</h1>
       <div>
         <iframe id="JotFormIFrame-251286346098162" title="Save Artshack's Mission"
           allowtransparency="true" allow="fullscreen" allowFullScreen

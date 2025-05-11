@@ -1,18 +1,22 @@
 "use client";
 
 import styles from './page.module.css'
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
+import Image from 'next/image';
 
 const MessageCard = ({reason, role, name}) => {
   return (
-      <li className={styles.messageCard}>
-        <div className={styles.messageContent}>
-          <p>{reason}</p>
-          <br/>
-          <p><strong>{name}</strong></p>
-          <p>{role}</p>
-        </div>
-      </li>
+    <li className={styles.messageCard}>
+      <div>
+        <Image className={styles.messageImage} src="/A.svg" alt={`${name}'s message`} width="200" height="200" />
+      </div>
+      <div className={styles.messageContent}>
+        <p>{reason}</p>
+        <br/>
+        <p><strong>{name}</strong></p>
+        <p>{role}</p>
+      </div>
+    </li>
   );
 }
 
@@ -28,7 +32,7 @@ export default function CommunityMessages() {
 
   return (
     <div>
-      <h1 className={styles.sectionTitle}>JOIN THE COMMUNITY TAKING A STAND</h1>
+      <h1 className={styles.sectionTitle} id="what-the-mission-means-to-our-community">JOIN THE COMMUNITY TAKING A STAND</h1>
       <div className={styles.messagesContainer}>
         <ul className={styles.messagesList}>
           {renderMessageCards(messages)}
