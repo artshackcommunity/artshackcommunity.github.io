@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <section className={styles.footer}>
       <p className={styles.footerContent}>
-        Questions? Contact us at{" "}<a href="mailto:artshackcommunity@proton.me">artshackcommunity@proton.me</a>
+        Questions? Contact us at{" "}<a href="mailto:artshack.community@proton.me">artshack.community@proton.me</a>
       </p>
     </section>
   )
