@@ -12,8 +12,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Artshack Community",
-  description: "Protect the Artshack Mission",
+  title: "Artshack Community Petition",
+  description: "Protect Artshack's Mission",
 };
 
 export default function RootLayout({ children }) {
