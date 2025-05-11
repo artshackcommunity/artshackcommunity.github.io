@@ -31,7 +31,7 @@
 .mission {
   grid-area: mission;
   padding-bottom: 2em;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 600;
   font-style: normal;
   font-kerning: normal;
@@ -205,10 +205,6 @@
     width: 90%;
     height: 80px;
     margin-bottom: 1em;
-  }
-
-  .quote {
-    padding-bottom: 1em;
   }
 
   .introContainer {
