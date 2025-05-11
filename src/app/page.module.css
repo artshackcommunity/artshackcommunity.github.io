@@ -1,6 +1,12 @@
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2em;
+}
 
-.container {
-  padding: 10em 0;
+.contentContainer {
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -19,7 +25,7 @@
 }
 
 .hero {
-  margin-bottom: 2em;
+  align-self: center;
 }
 
 .mission {
@@ -39,7 +45,7 @@
   font-weight: 400;
   font-style: normal;
   font-kerning: normal;
-  line-height: 33px;
+  line-height: 26px;
 }
 
 .introList {
@@ -178,22 +184,19 @@
 }
 
 .footerContent {
-
   text-align: center;
-  }
+}
 
 @media (max-width: 1000px) {
-  .container {
-    padding: 2em 0;
+  .contentContainer {
     justify-content: center;
     display: flex;
     flex-direction: column;
   }
   
   .hero {
-    width: 360px;
-    height: 45px;
-    align-self: center;;
+    width: 90%;
+    height: 90px;
   }
 
   .quote {
@@ -229,6 +232,7 @@
   .townHallGraphic {
     width: 100%;
     transform: scale(1.5);
+    z-index: -999;
   }
 
   .sectionTitle {
@@ -248,7 +252,7 @@
   }
 
   .jotformIframe {
-    height: 2100px;
+    height: 2010px;
     width: 100%;
   }
 
