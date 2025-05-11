@@ -21,7 +21,7 @@ export default function Intro() {
             Artshack’s mission is so special, but our leaders are falling short of it. Specifically, Executive Director
             McKendree Key’s actions have failed to meet our commitment to anti-racism, diversity, equity, and inclusion.
             The status quo hurts beloved community members, and disrupts Artshack’s operations as a non-profit in
-            service of its BedStuy neighbors. <a href="https://www.google.com">Community members have compiled a
+            service of its BedStuy neighbors. <a href="https://drive.proton.me/urls/3MEX7K3QQR#n8i2yEK86I32">Community members have compiled a
             timeline of recent and relevant events here.</a>
             <br/><br/>
             Despite concerned community members’ requests to meet collectively with the director and the board
