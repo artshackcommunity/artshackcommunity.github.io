@@ -46,7 +46,7 @@ export default function Intro() {
           </ul>
         </div>
         <div className={styles.townHallContainer}>
-          <Image src="/TownHall.svg" alt="Town Hall at Church xyz 6:30pm" width="290" height="285"
+          <Image src="/TownHall.svg" alt="Town Hall at Artshack 6:30pm" width="290" height="285"
                  className={styles.townHallGraphic}/>
         </div>
       </section>
