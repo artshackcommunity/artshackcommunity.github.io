@@ -2,13 +2,14 @@ import Image from 'next/image'
 import styles from './page.module.css'
 
 export default function Intro() {
+  const recipients = "mckendreesfakeemail@gmail.com,nicksfakeemail@gmail.com,jasonsfakeemail@gmail.com"
   const emailSubject = "Protect Artshack's Mission!"
   const emailBody = "I stand with the community of Artshack working to protect Artshack’s Mission. We demand:\n" +
       "\n1. No restructuring without community input\nIncluding staff firings or dissolving of programs\n" +
       "\n2. Appoint a diverse and representative board\nArtshack Board of Directors should reflect equity, diversity, and inclusion and be active community space members, as stated in its mission.\n" +
       "\n3. Financial transparency\nA recent and comprehensive budget and income statement, with explanations for any gaps or anomalies.\n" +
       "\n4. Accountability as an anti-racist organization\nIncluding a public apology to the community, and a detailed plan of how the organization will address the harm caused and prevent future harm.\n"
-  const emailTemplate = `mailto:mckendreesfakeemail@gmail.com,nicksfakeemail@gmail.com,jasonsfakeemail@gmail.com?subject=${emailSubject}&body=${encodeURIComponent(emailBody)}`
+  const emailTemplate = `mailto:${recipients}?subject=${emailSubject}&body=${encodeURIComponent(emailBody)}`
 
   return (
       <section className={styles.introContainer}>
