@@ -166,6 +166,15 @@
   flex-direction: column;
 }
 
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  background-color: #88f5ce;
+  white-space: pre-wrap;
+}
+
 @media (max-width: 1000px) {
   .container {
     padding: 2em 0;

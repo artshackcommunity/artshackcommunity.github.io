@@ -31,14 +31,14 @@ export default function CommunityMessages() {
   });
 
   return (
-    <div>
+    <section>
       <h1 className={styles.sectionTitle} id="what-the-mission-means-to-our-community">JOIN THE COMMUNITY TAKING A STAND</h1>
       <div className={styles.messagesContainer}>
         <ul className={styles.messagesList}>
           {renderMessageCards(messages)}
         </ul>
       </div>
-    </div>
+    </section>
   );
 }
 

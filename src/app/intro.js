@@ -7,7 +7,7 @@ export default function Intro() {
   const emailTemplate = `mailto:recipient@example.com?subject=${emailSubject}&body=${emailBody}`
 
   return (
-    <div className={styles.introContainer}>
+    <section className={styles.introContainer}>
       <div className={styles.introCopyContainer}>
         <Image src="/hero.png" alt="Save Artshack's Mission" width="620" height="72" className={styles.hero} />
         <p className={styles.quote}>
@@ -25,6 +25,6 @@ export default function Intro() {
       <div className={styles.townHallContainer}>
         <Image src="/TownHall.svg" alt="Town Hall at Church xyz 6:30pm" width="290" height="285" className={styles.townHallGraphic} />
       </div>
-    </div>
+    </section>
   )
 }
