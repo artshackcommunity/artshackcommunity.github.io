@@ -4,9 +4,14 @@ import Image from 'next/image'
 import styles from './page.module.css'
 
 export default function Intro() {
-  const emailSubject = "Save Artshack's Mission!"
-  const emailBody = "I'm part of the community and I want you to be restructured to better reflect the wants and needs of the community."
-  const emailTemplate = `mailto:recipient@example.com?subject=${emailSubject}&body=${emailBody}`;
+  const recipients = "mckendreesfakeemail@gmail.com,nicksfakeemail@gmail.com,jasonsfakeemail@gmail.com"
+  const emailSubject = "Protect Artshack's Mission!"
+  const emailBody = "I stand with the community of Artshack working to protect Artshack’s Mission. We demand:\n" +
+      "\n1. No restructuring without community input\nIncluding staff firings or dissolving of programs\n" +
+      "\n2. Appoint a diverse and representative board\nArtshack Board of Directors should reflect equity, diversity, and inclusion and be active community space members, as stated in its mission.\n" +
+      "\n3. Financial transparency\nA recent and comprehensive budget and income statement, with explanations for any gaps or anomalies.\n" +
+      "\n4. Accountability as an anti-racist organization\nIncluding a public apology to the community, and a detailed plan of how the organization will address the harm caused and prevent future harm.\n"
+  const emailTemplate = `mailto:${recipients}?subject=${emailSubject}&body=${encodeURIComponent(emailBody)}`
 
   return (
       <section className={styles.introContainer}>
@@ -15,7 +20,8 @@ export default function Intro() {
             Artshack’s mission is so special, but our leaders are falling short of it. Specifically, Executive Director
             McKendree Key’s actions have failed to meet our commitment to anti-racism, diversity, equity, and inclusion.
             The status quo hurts beloved community members, and disrupts Artshack’s operations as a non-profit in
-            service of its BedStuy neighbors. <a href="https://www.google.com">Community members have compiled a timeline of recent and relevant events here.</a>
+            service of its BedStuy neighbors. <a href="https://www.google.com">Community members have compiled a
+            timeline of recent and relevant events here.</a>
             <br/><br/>
             Despite concerned community members’ requests to meet collectively with the director and the board
             to address it, no concessions have been made to engage in open, restorative dialogue between all parties.
@@ -31,7 +37,7 @@ export default function Intro() {
           </p>
           <ul className={styles.introList}>
             <li><a id="form"
-                href="https://docs.google.com/forms/d/e/1FAIpQLSc_E2yEf8Vut1CGfx4tQD2mTBAJyVD1e_S5CEcQwbEm-gXIqQ/viewform">Tell
+                   href="https://docs.google.com/forms/d/e/1FAIpQLSc_E2yEf8Vut1CGfx4tQD2mTBAJyVD1e_S5CEcQwbEm-gXIqQ/viewform">Tell
               Us About Your Artshack Experience</a></li>
             <li><a href="https://opencollective.com/artshack-organizers-mutual-aid">Donate to Mutual Aid Fund</a></li>
             <li><a href="#petition">Sign Our Petition</a></li>
