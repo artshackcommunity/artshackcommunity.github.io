@@ -36,12 +36,13 @@ export default function Intro() {
             <i>“Artshack Brooklyn is a nonprofit ceramics studio located in Bed-Stuy, Brooklyn. We are an anti-racist, queer-affirming organization that celebrates the creativity of youth and honors people of all abilities.
             We believe in the healing powers of clay!” - Artshack Mission</i>
           </p>
+          <h1>Calls to Action:</h1><br/>
           <ul className={styles.introList}>
+            <li><a href="#petition">Sign Our Petition</a></li>
             <li><a id="form"
                    href="https://docs.google.com/forms/d/e/1FAIpQLSc_E2yEf8Vut1CGfx4tQD2mTBAJyVD1e_S5CEcQwbEm-gXIqQ/viewform">Tell
-              Us About Your Artshack Experience</a></li>
+              Us About Your Experience at Artshack</a></li>
             <li><a href="https://opencollective.com/artshack-organizers-mutual-aid">Donate to Mutual Aid Fund</a></li>
-            <li><a href="#petition">Sign Our Petition</a></li>
             <li><a href={emailTemplate}>Email McKendree Key & the Board</a></li>
             <li><a href="#what-the-mission-means-to-our-community">See What the Mission Means to Our Community</a></li>
           </ul>
