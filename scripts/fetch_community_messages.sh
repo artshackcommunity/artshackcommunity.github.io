@@ -1,5 +1,4 @@
 set -eu
-exec 2>/dev/null
 
 export SAVE_ARTSHACK_MISSION_FORM_ID="251286346098162"
 
@@ -13,7 +12,7 @@ fi
 
 echo "$jotform_response" > "submissions.json"
 
-jq '[.content[].answers | {
+jq '[.content[] | select(.status == "ACTIVE") | .answers | {
   name: (map(select(.name == "name") | .prettyFormat) | first),
   reason: (map(select(.name == "whyIs") | .answer) | first),
   role: (map(select(.name == "whatIs") | .prettyFormat) | first)

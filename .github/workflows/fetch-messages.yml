@@ -14,11 +14,6 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Check
-        run: |
-          jq --version
-          curl --version
-
       - name: fetch
         shell: bash
         run: ./scripts/fetch_community_messages.sh
