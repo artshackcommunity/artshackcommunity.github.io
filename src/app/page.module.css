@@ -169,12 +169,18 @@
 
 .footer {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 2em;
   background-color: #88f5ce;
   white-space: pre-wrap;
 }
+
+.footerContent {
+
+  text-align: center;
+  }
 
 @media (max-width: 1000px) {
   .container {
