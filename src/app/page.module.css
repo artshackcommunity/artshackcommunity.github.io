@@ -7,6 +7,7 @@
 }
 
 .contentContainer {
+  padding-top: 1em;
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -196,6 +197,7 @@
 
 @media (max-width: 1000px) {
   .contentContainer {
+    padding-top: 0;
     justify-content: center;
     display: flex;
     flex-direction: column;

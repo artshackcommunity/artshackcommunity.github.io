@@ -16,7 +16,7 @@ export default function Page() {
             alt="Protect Artshack"
             className={styles.hero}
             width="1200"
-            height="280" />
+            height="200" />
       <div className={styles.contentContainer}>
         <Intro/>
         <Demands/>
