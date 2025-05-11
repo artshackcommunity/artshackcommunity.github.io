@@ -1,4 +1,4 @@
-name: Fetch Messages from Save Artshack's Mission Form
+name: Fetch Messages from Protect Artshack's Mission Form
 
 on:
   workflow_dispatch:
