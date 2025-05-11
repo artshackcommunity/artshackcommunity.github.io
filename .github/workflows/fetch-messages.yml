@@ -1,4 +1,4 @@
-name: Fetch Signatures from Save Artshack's Mission Form
+name: Fetch Messages from Save Artshack's Mission Form
 
 on:
   workflow_dispatch:
@@ -8,7 +8,7 @@ permissions:
 
 jobs:
   fetch:
-    name: Fetch Signatures
+    name: Fetch Messages
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -19,14 +19,14 @@ jobs:
           jq --version
           curl --version
 
-      - name: Fetch Signatures
+      - name: fetch
         shell: bash
-        run: ./scripts/fetch_signatures.sh
+        run: ./scripts/fetch_community_messages.sh
         env:
           JOTFORM_API_KEY: ${{ secrets.JOTFORM_API_KEY }}
 
       - name: Commit and Push Changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: "Update signatures.json"
-          file_pattern: public/signatures.json
+          commit_message: "Update messages.json"
+          file_pattern: public/messages.json

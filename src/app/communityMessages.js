@@ -20,7 +20,7 @@ export default function CommunityMessages() {
   const [messages, setMessages] = useState([]);
 
   useEffect(() => {
-    fetch('/signatures.json')
+    fetch('/messages.json')
         .then(response => response.json())
         .then(data => setMessages(data))
         .catch(error => console.error('Error fetching messages:', error));
@@ -38,13 +38,13 @@ export default function CommunityMessages() {
   );
 }
 
-function renderMessageCards(message) {
-  return message.map((signature) => (
+function renderMessageCards(messages) {
+  return messages.map((message) => (
       <MessageCard
-          key={signature.name}
-          reason={signature.reason}
-          role={signature.role.replace(";", ",")}
-          name={signature.name}
+          key={message.name}
+          reason={message.reason}
+          role={message.role.replace(";", ",")}
+          name={message.name}
       />
   ));
 }

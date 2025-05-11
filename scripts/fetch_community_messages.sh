@@ -17,4 +17,4 @@ jq '[.content[].answers | {
   name: (map(select(.name == "name") | .prettyFormat) | first),
   reason: (map(select(.name == "whyIs") | .answer) | first),
   role: (map(select(.name == "whatIs") | .prettyFormat) | first)
-}]' submissions.json > public/signatures.json
+}]' submissions.json > public/messages.json
