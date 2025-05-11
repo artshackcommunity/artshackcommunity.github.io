@@ -6,6 +6,10 @@
   flex-direction: column;
 }
 
+.containerMainContent {
+  padding: 0 9em;
+}
+
 .introContainer {
   display: flex;
   flex-direction: row;
@@ -70,6 +74,7 @@
 }
 
 .sectionTitle {
+  font-size: 2rem;
   text-align: center;
   margin-bottom: 2em;
 }
@@ -114,39 +119,59 @@
   border: none;
 }
 
-.signaturesTable {
-  border-left: 0;
-  border-right: 0;
-  border-top: 0;
-  border-bottom: 0;
-  border-spacing: 0;
+.messagesContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
-.signaturesTable th {
+.messagesList {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.messageCard {
+  background-color: transparent;
+  background-image: url('/Message.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 480px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: flex-end;
+  align-content: center;
+  margin-bottom: 2em;
+  margin-right: 1em;
+}
+
+.messageContent {
+  display: flex;
+  width: 50%;
+  max-height: 220px;
   text-align: center;
-  padding: 1em;
-  border-bottom: 1px solid #000;
-}
-
-.signaturesTable th:not(:last-child) {
-  border-right: 1px solid #000;
-}
-
-.signaturesTable td {
-  min-width: 200px;
-  text-align: center;
-  padding: 1em;
-  border-bottom: 1px solid #000;
-
-}
-
-.signaturesTable td:not(:last-child) {
-  border-right: 1px solid #000;
+  overflow-y: scroll;
+  font-size: .9rem;
+  justify-content: center;
+  margin-right: 1em;
+  padding-right: .8em;
+  scrollbar-color: rgba(36, 36, 174, 0.5) white;
+  flex-direction: column;
 }
 
 @media (max-width: 1000px) {
   .container {
-    padding: 1em 2em;
+    padding: 1em;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -188,18 +213,20 @@
     transform: scale(1.5);
   }
 
-  .signaturesContainer {
+  .messagesContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
 
-  .signaturesTable {
-    width: 110%;
+  .messageCard {
+    width: 90%;
+    margin-bottom: 1em;
   }
 
-  .signaturesTable td {
-    min-width: 0;
+  .messageContent {
+    max-height: 130px;
   }
 }
