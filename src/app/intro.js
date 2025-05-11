@@ -30,7 +30,9 @@ export default function Intro() {
             to believe the director is engaging in punitive efforts to restructure the organization to avoid
             accountability.
             <br/><br/>
-            But we will not be silenced! <a href="#demands">Click here to see our demands.</a>
+          But we will not be silenced! <a href="#demands">Click here to see our demands.</a>
+          <br /><br />
+          In the unfortunate event that workers are let go due to their involvement, we have set up a <a href="https://opencollective.com/artshack-organizers-mutual-aid">mutual aid fund</a> that will continue to support them.
           </p>
           <p className={styles.mission}>
             <i>“Artshack Brooklyn is a nonprofit ceramics studio located in Bed-Stuy, Brooklyn. We are an anti-racist, queer-affirming organization that celebrates the creativity of youth and honors people of all abilities.
