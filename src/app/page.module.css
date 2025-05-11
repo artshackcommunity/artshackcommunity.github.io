@@ -1,6 +1,6 @@
 
 .container {
-  padding: 10em 6em;
+  padding: 10em 0;
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -10,6 +10,7 @@
   display: flex;
   flex-direction: row;
   width: 100%;
+  padding: 0 6em;
   margin-bottom: 2em;
 }
 
@@ -66,6 +67,11 @@
 }
 
 .demandsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 6em;
   margin-bottom: 4em;
 }
 
@@ -106,7 +112,7 @@
 }
 
 .petitionContainer {
-  margin-bottom: 4em;
+  width: 100%;
 }
 
 .jotformIframe {
@@ -162,7 +168,7 @@
 
 @media (max-width: 1000px) {
   .container {
-    padding: 2em;
+    padding: 2em 0;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -179,6 +185,7 @@
   }
 
   .introContainer {
+    padding: 0 2em;
     flex-direction: column;
   }
 
@@ -192,6 +199,10 @@
 
   .introList {
     margin-bottom: 1em;
+  }
+
+  .demandsContainer {
+    padding: 0 2em;
   }
 
   .townHallContainer {
@@ -208,8 +219,21 @@
     margin-bottom: 1em;
   }
 
+  .petitionContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4em
+  }
+
+  .petitionContent {
+    width: 100%;
+  }
+
   .jotformIframe {
-    height: 2200px;
+    height: 2100px;
+    width: 100%;
   }
 
   .messagesContainer {

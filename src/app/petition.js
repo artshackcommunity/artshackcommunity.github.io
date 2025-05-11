@@ -4,7 +4,7 @@ export default function Petition() {
   return (
     <div className={styles.petitionContainer}>
       <h1 className={styles.sectionTitle} id="petition">Sign our Petition</h1>
-      <div>
+      <div className={styles.petitionContent}>
         <iframe id="JotFormIFrame-251286346098162" title="Save Artshack's Mission"
           allowtransparency="true" allow="fullscreen" allowFullScreen
           src="https://form.jotform.com/251286346098162" frameBorder="0"

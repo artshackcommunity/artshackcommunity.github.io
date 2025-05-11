@@ -43,9 +43,9 @@ export default function CommunityMessages() {
 }
 
 function renderMessageCards(messages) {
-  return messages.map((message) => (
+  return messages.map((message, i) => (
       <MessageCard
-          key={message.name}
+          key={message.name+i}
           reason={message.reason}
           role={message.role.replace(";", ",")}
           name={message.name}
