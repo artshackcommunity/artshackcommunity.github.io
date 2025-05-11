@@ -22,8 +22,8 @@
   margin-bottom: 2em;
 }
 
-.quote {
-  grid-area: quote;
+.mission {
+  grid-area: mission;
   padding-bottom: 2em;
   font-size: 1.75rem;
   font-weight: 600;
@@ -35,7 +35,7 @@
 .introCopy {
   grid-area: introCopy;
   padding-bottom: 2em;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-weight: 400;
   font-style: normal;
   font-kerning: normal;

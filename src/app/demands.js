@@ -11,7 +11,7 @@ const ListItem = ({ title, copy }) => {
 
 export default function Demands() {
   return (
-    <section className={styles.demandsContainer}>
+    <section className={styles.demandsContainer} id="demands">
       <h1 className={styles.sectionTitle}>Our Demands</h1>
       <ul className={styles.demandsList}>
         <ListItem title="Demand" copy="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. " />
