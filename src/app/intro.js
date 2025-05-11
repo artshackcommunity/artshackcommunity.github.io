@@ -36,7 +36,7 @@ export default function Intro() {
             <i>“Artshack Brooklyn is a nonprofit ceramics studio located in Bed-Stuy, Brooklyn. We are an anti-racist, queer-affirming organization that celebrates the creativity of youth and honors people of all abilities.
             We believe in the healing powers of clay!” - Artshack Mission</i>
           </p>
-          <h1>Calls to Action:</h1><br/>
+          <h1 className={styles.ctaTitle}>Calls to Action:</h1>
           <ul className={styles.introList}>
             <li><a href="#petition">Sign Our Petition</a></li>
             <li><a id="form"

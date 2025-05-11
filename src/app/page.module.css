@@ -81,6 +81,11 @@
   margin-bottom: 4em;
 }
 
+.ctaTitle {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+
 .sectionTitle {
   font-size: 2rem;
   text-align: center;
