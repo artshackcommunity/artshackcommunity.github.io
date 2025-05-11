@@ -5,13 +5,12 @@ import {useEffect, useState} from "react";
 
 const MessageCard = ({reason, role, name}) => {
   return (
-      <li>
-        <div className={styles.messagesEmptiness}></div>
-        <div className={styles.messagesContent}>
-          <span>{reason}</span>
-          {/*<br />*/}
-          {/*<h5>{name}</h5>*/}
-          {/*<h4>{role}</h4>*/}
+      <li className={styles.messageCard}>
+        <div className={styles.messageContent}>
+          <p>{reason}</p>
+          <br/>
+          <p><strong>{name}</strong></p>
+          <p>{role}</p>
         </div>
       </li>
   );
@@ -28,12 +27,14 @@ export default function CommunityMessages() {
   });
 
   return (
-      <div className={styles.signaturesContainer}>
-        <h1 className={styles.sectionTitle}>JOIN THE COMMUNITY TAKING A STAND</h1>
-        <ul className={styles.messages}>
+    <div>
+      <h1 className={styles.sectionTitle}>JOIN THE COMMUNITY TAKING A STAND</h1>
+      <div className={styles.messagesContainer}>
+        <ul className={styles.messagesList}>
           {renderMessageCards(messages)}
         </ul>
       </div>
+    </div>
   );
 }
 

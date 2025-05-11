@@ -7,12 +7,13 @@ import styles from './page.module.css'
 export default function Page() {
 
 
-    return <div className={styles.container}>
-        <div className={styles.containerMainContent}>
-            <Intro/>
-            <Demands/>
-            <Petition/>
-        </div>
-        <CommunityMessages />
-    </div>
+  return (
+    <div>
+      <div className={styles.container}>
+        <Intro/>
+        <Demands/>
+        <Petition/>
+      </div>
+      <CommunityMessages />
+  </div>)
 }
