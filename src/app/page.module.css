@@ -198,7 +198,8 @@
   
   .hero {
     width: 90%;
-    height: 90px;
+    height: 80px;
+    margin-bottom: 1em;
   }
 
   .quote {
