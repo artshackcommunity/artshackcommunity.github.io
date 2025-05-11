@@ -1,13 +1,9 @@
 
 .container {
-  padding: 10em 17em;
+  padding: 10em 6em;
   justify-content: center;
   display: flex;
   flex-direction: column;
-}
-
-.containerMainContent {
-  padding: 0 9em;
 }
 
 .introContainer {
@@ -151,8 +147,7 @@
   justify-items: center;
   align-items: flex-end;
   align-content: center;
-  margin-bottom: 2em;
-  margin-right: 1em;
+  margin: 0 1em 2em 1em;
 }
 
 .messageContent {
@@ -171,7 +166,7 @@
 
 @media (max-width: 1000px) {
   .container {
-    padding: 1em;
+    padding: 2em;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -179,7 +174,7 @@
   
   .hero {
     /* transform: scale(0.5); */
-    width: 110%;
+    width: 100%;
     align-self: center;;
   }
 
