@@ -43,7 +43,7 @@ function renderMessageCards(message) {
       <MessageCard
           key={signature.name}
           reason={signature.reason}
-          role={signature.role}
+          role={signature.role.replace(";", ",")}
           name={signature.name}
       />
   ));
