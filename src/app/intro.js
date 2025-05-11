@@ -31,7 +31,7 @@ const Quote = ({ author, text}) => {
 }
 
 export default function Intro() {
-  const emailSubject = "Save Artshack's Mission!"
+  const emailSubject = "Protect Artshack's Mission!"
   const emailBody = "I'm part of the community and I want you to be restructured to better reflect the wants and needs of the community."
   const emailTemplate = `mailto:recipient@example.com?subject=${emailSubject}&body=${emailBody}`
 
@@ -71,7 +71,7 @@ export default function Intro() {
 =======
       <section className={styles.introContainer}>
         <div className={styles.introCopyContainer}>
-          <Image src="/hero.png" alt="Save Artshack's Mission" width="620" height="72" className={styles.hero}/>
+          <Image src="/hero.png" alt="Protect Artshack's Mission" width="620" height="72" className={styles.hero}/>
           <p className={styles.introCopy}>
             Artshack’s mission is so special, but our leaders are falling short of it. Specifically, Executive Director
             McKendree Key’s actions have failed to meet our commitment to anti-racism, diversity, equity, and inclusion.
