@@ -48,7 +48,7 @@ function renderMessageCards(messages) {
       <MessageCard
           key={message.name+i}
           reason={message.reason}
-          role={message.role.replace(";", ",")}
+          role={message.role.replaceAll(";", ",")}
           name={message.name}
       />
   ));
