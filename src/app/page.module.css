@@ -97,8 +97,8 @@
   list-style: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .demandsList li {
@@ -111,6 +111,7 @@
   justify-content: center;
   align-items: center;
   padding: 1em 2em;
+  margin-right: 2em;
 }
 
 .demandsList h2 {
@@ -243,6 +244,10 @@
 
   .sectionTitle {
     margin-bottom: 1em;
+  }
+
+  .demandsList li {
+    margin-right: 0;
   }
 
   .petitionContainer{
