@@ -136,6 +136,12 @@
   border: none;
 }
 
+.countCopy {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 1.5em;
+}
+
 .messagesContainer {
   display: flex;
   flex-direction: row;

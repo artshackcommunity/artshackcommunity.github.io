@@ -21,19 +21,31 @@ const MessageCard = ({reason, role, name}) => {
   );
 }
 
+const SignatureCount = ({ count }) => {
+  return (
+    <p className={styles.countCopy}>
+      <strong>{count}</strong> signatures and counting!
+    </p>
+  );
+}
+
 export default function CommunityMessages() {
   const [messages, setMessages] = useState([]);
 
   useEffect(() => {
     fetch('/messages.json')
         .then(response => response.json())
-        .then(data => setMessages(data))
+        .then(data => {
+          setMessages(data)
+          setCountCopy(`${data.length} signatures and counting!`)
+        })
         .catch(error => console.error('Error fetching messages:', error));
   }, []);
 
   return (
     <section>
       <h1 className={styles.sectionTitle} id="what-the-mission-means-to-our-community">JOIN THE COMMUNITY TAKING A STAND</h1>
+      {messages?.length ? <SignatureCount count={messages.length} /> : null}
       <div className={styles.messagesContainer}>
         <ul className={styles.messagesList}>
           {renderMessageCards(messages)}
