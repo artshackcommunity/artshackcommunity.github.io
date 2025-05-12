@@ -71,6 +71,7 @@
 .townHallGraphic {
   width: 100%;
   transform: scale(1.65);
+  z-index: -999;
 }
 
 .demandsContainer {
