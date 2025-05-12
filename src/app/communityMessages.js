@@ -35,10 +35,7 @@ export default function CommunityMessages() {
   useEffect(() => {
     fetch('/messages.json')
         .then(response => response.json())
-        .then(data => {
-          setMessages(data)
-          setCountCopy(`${data.length} signatures and counting!`)
-        })
+        .then(data => setMessages(data))
         .catch(error => console.error('Error fetching messages:', error));
   }, []);
 
