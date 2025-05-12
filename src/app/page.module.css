@@ -108,9 +108,9 @@
   height: 300px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
-  padding: 1em 2em;
+  padding: 3em 2em;
   margin-right: 2em;
 }
 
@@ -172,7 +172,7 @@
   display: flex;
   width: 50%;
   max-height: 500px;
-  text-align: center;
+  text-align: left;
   overflow-y: scroll;
   font-size: .9rem;
   margin: 1em 1em 1em 0.5em;
@@ -206,7 +206,7 @@
   
   .hero {
     width: 90%;
-    height: 80px;
+    height: 60px;
     margin-bottom: 1em;
   }
 

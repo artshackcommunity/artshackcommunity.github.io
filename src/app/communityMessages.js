@@ -5,13 +5,14 @@ import { useEffect, useState } from "react";
 import Image from 'next/image';
 
 const MessageCard = ({reason, role, name}) => {
+  const maybeQuotationMark = reason ? '“' : '';
   return (
     <li className={styles.messageCard}>
       <div>
         <Image className={styles.messageImage} src="/A.svg" alt={`${name}'s message`} width="200" height="200" />
       </div>
       <div className={styles.messageContent}>
-        <p>{reason}</p>
+        <p>{maybeQuotationMark}{reason}{maybeQuotationMark}</p>
         <br/>
         <p><strong>{name}</strong></p>
         <p>{role}</p>

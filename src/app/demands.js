@@ -2,10 +2,10 @@ import styles from './page.module.css'
   const COPY = [
   {
     title: "No restructuring without community input",
-    copy: "Including staff firings or dissolving of programs."
+      copy: "Including retaliatory staff firings or dissolving of programs."
   },
   {
-    title: "Appoint a diverse and representative board",
+    title: "Reappoint a diverse and representative board",
     copy: "Artshack Board of Directors should reflect equity, diversity, and inclusion and be active community space members, as stated in its mission."
   },
   {
