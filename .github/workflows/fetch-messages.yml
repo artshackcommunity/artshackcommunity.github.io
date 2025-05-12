@@ -1,6 +1,9 @@
 name: Fetch Messages from Protect Artshack's Mission Form
 
 on:
+  schedule:
+    # Runs every 30 minutes at the :25 and :55 minute mark
+    - cron: '25,55 * * * *'
   workflow_dispatch:
 
 permissions:

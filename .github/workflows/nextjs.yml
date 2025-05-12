@@ -5,6 +5,9 @@
 name: Deploy Next.js site to Pages
 
 on:
+  schedule:
+    # Runs every 30 minutes at the :00 and :30 minute mark
+    - cron: '*/30 * * * *'
   # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
