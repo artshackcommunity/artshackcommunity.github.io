@@ -35,3 +35,6 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 action [workflow](https://github.com/artshackcommunity/artshackcommunity.github.io/actions/workflows/fetch-messages.yml)
 3. Select the main branch and click "Run workflow"
 4. Go to the [actions page](https://github.com/artshackcommunity/artshackcommunity.github.io/actions) to see all running workflows and ensure the status is green when the action completes
+5. Visit the Deploy Next.js to Pages action [workflow](https://github.com/artshackcommunity/artshackcommunity.github.io/actions/workflows/nextjs.yml)
+6. Select the main branch and click "Run workflow"
+7. Refresh the page and ensure the status turns green when the action completes
