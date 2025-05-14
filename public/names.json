@@ -10,5 +10,23 @@
     "pronouns": "they/them",
     "role": "Member",
     "years": 3
+  },
+  {
+    "name": "foo",
+    "pronouns": "she/her",
+    "role": "Member",
+    "years": 3
+  },
+  {
+    "name": "bar",
+    "pronouns": "she/her",
+    "role": "Member",
+    "years": 3
+  },
+  {
+    "name": "baz",
+    "pronouns": "he/him",
+    "role": "Member",
+    "years": 3
   }
 ]

@@ -15,8 +15,8 @@ export default function About() {
             height="200"/>
         <div className={styles.contentContainer}>
           <AboutUs/>
-          <Footer/>
         </div>
+        <Footer/>
       </div>
   )
 }
