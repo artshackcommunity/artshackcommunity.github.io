@@ -2,6 +2,7 @@ import styles from "@/app/page.module.css";
 import Image from "next/image";
 import Footer from "@/app/footer";
 import AboutUs from "@/app/aboutUs";
+import '../app/globals.css';
 
 export default function About() {
   return (
@@ -14,8 +15,8 @@ export default function About() {
             height="200"/>
         <div className={styles.contentContainer}>
           <AboutUs/>
+          <Footer/>
         </div>
-        <Footer/>
       </div>
   )
 }

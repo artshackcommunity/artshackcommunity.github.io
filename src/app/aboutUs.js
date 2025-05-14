@@ -15,7 +15,7 @@ export default function AboutUs() {
 
   function renderNames() {
     return names.map((person, i) => (
-            <p key={person.name}>{person.name} ({person.pronouns})</p>
+            <p key={person.name}>{person.name} ({person.pronouns})<br/></p>
         )
     );
   }
@@ -27,7 +27,7 @@ export default function AboutUs() {
             We are a group of 50+ members, students, staff, teachers, and BedStuy residents who have built a collective
             memory that unveils the broken link between Artshack's mission, and its executive leadership.
             While not all of us can put our names here for fear of retaliation, below are several folks that make up the
-            ever growing, ever strengthening crew who call ourselves Artshack Community.<br/>
+            ever growing, ever strengthening crew who call ourselves Artshack Community.<br/><br/>
 
             {renderNames()}
           </p>
