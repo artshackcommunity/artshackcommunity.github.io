@@ -111,7 +111,6 @@
   height: 300px;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   padding: 3em 2em;
   margin-right: 2em;
@@ -184,15 +183,25 @@
   margin: 0 1em 2em 1em;
 }
 
+.messageImage {
+  margin-right: 0.5em;
+}
+
+.messageCardRole {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+}
+
 .messageContent {
   display: flex;
-  width: 50%;
+  width: 85%;
   max-height: 700px;
   text-align: left;
   overflow-y: scroll;
   font-size: .9rem;
   margin: 1em 1em 1em 0.5em;
-  padding-right: .8em;
   scrollbar-color: rgba(36, 36, 174, 0.5) transparent;
   flex-direction: column;
 }
@@ -301,10 +310,5 @@
   .messageCard {
     width: 90%;
     margin-bottom: 1em;
-  }
-
-  .messageImage {
-    width: 130px;
-    height: 130px;
   }
 }

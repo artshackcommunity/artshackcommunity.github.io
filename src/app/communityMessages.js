@@ -4,18 +4,26 @@ import styles from './page.module.css'
 import { useEffect, useState } from "react";
 import Image from 'next/image';
 
+const Quote = ({ reason }) => {
+  if (!reason) return null
+  return <>
+    <p>“{reason}“</p>
+    <br />
+  </>
+}
+
 const MessageCard = ({reason, role, name}) => {
-  const maybeQuotationMark = reason ? '“' : '';
   return (
     <li className={styles.messageCard}>
-      <div>
-        <Image className={styles.messageImage} src="/A.svg" alt={`${name}'s message`} width="200" height="200" />
-      </div>
       <div className={styles.messageContent}>
-        <p>{maybeQuotationMark}{reason}{maybeQuotationMark}</p>
-        <br/>
-        <p><strong>{name}</strong></p>
-        <p>{role}</p>
+        <Quote reason={reason} />
+        <div className={styles.messageCardRole}>
+          <Image className={styles.messageImage} src="/A.svg" alt={`${name}'s message`} width="30" height="30" />
+          <div>
+            <p><strong>{name}</strong></p>
+            <p>{role}</p>
+          </div>
+        </div>
       </div>
     </li>
   );
