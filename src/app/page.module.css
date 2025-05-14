@@ -70,7 +70,7 @@
 
 .townHallGraphic {
   width: 100%;
-  transform: scale(1.65);
+  transform: scale(2.5);
   z-index: -999;
 }
 
@@ -208,6 +208,12 @@
 
 .footerContent {
   text-align: center;
+}
+
+@media (max-width: 1250px) {
+  .townHallGraphic {
+    transform: scale(1.8);
+  }
 }
 
 @media (max-width: 1000px) {
