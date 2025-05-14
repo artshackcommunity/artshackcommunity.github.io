@@ -13,10 +13,11 @@ export default function Page() {
     <div className={styles.pageContainer}>
       <Image
           src="/ProtectArtshack.PNG"
-            alt="Protect Artshack"
+            alt="Protect Artshack's Mission"
             className={styles.hero}
-            width="1200"
-            height="200" />
+            width={1200}
+            height={200}
+            layout="responsive"/>
       <div className={styles.contentContainer}>
         <Intro/>
         <Demands/>

@@ -27,6 +27,8 @@
 
 .hero {
   align-self: center;
+  object-fit: container;
+  padding: 0 10em;
 }
 
 .mission {
@@ -228,6 +230,7 @@
     width: 90%;
     height: 60px;
     margin-bottom: 1em;
+    padding: 0 2em;
   }
 
   .introContainer {
@@ -252,8 +255,8 @@
   }
 
   .townHallContainer {
+    margin: 2em 0 6em 0;
     width: 100%;
-    margin-bottom: 10em;
   }
 
   .townHallGraphic {
