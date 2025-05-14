@@ -14,7 +14,8 @@ export default function AboutUs() {
   }, []);
 
   function renderNames() {
-    return names.map((person, i) => (
+    const sortedNames = names.sort((first, second) => first.name.localeCompare(second.name))
+    return sortedNames.map((person, i) => (
             <p key={person.name}>{person.name} ({person.pronouns})<br/></p>
         )
     );
