@@ -173,7 +173,7 @@
   background-color: #d6f6ff;
   border-radius: 30px;
   width: 480px;
-  max-height: 800px;
+  max-height: 1000px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -196,11 +196,12 @@
 
 .messageContent {
   display: flex;
-  width: 85%;
-  max-height: 700px;
+  width: 88%;
+  max-height: 900px;
   text-align: left;
+  padding-right: 0.2rem;
   overflow-y: scroll;
-  font-size: .9rem;
+  font-size: 1rem;
   margin: 1em 1em 1em 0.5em;
   scrollbar-color: rgba(36, 36, 174, 0.5) transparent;
   flex-direction: column;
