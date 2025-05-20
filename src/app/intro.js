@@ -57,9 +57,9 @@ export default function Intro() {
             <li><a href="#what-the-mission-means-to-our-community">See What the Mission Means to Our Community</a></li>
           </ul>
         </div>
-        <div className={styles.townHallContainer}>
-          <Image src="/TownHall.svg" alt="Town Hall at Artshack 6:30pm" width="290" height="285"
-                 className={styles.townHallGraphic}/>
+        <div className={styles.fistContainer}>
+          <Image src="/Fist.svg" alt="Solidarity" width="290" height="285"
+                 className={styles.fistGraphic}/>
         </div>
       </section>
   )

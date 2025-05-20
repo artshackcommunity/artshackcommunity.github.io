@@ -63,14 +63,14 @@
   margin-bottom: 10px;
 }
 
-.townHallContainer {
+.fistContainer {
   display: flex;
   width: 50%;
   justify-content: center;
   align-items: center;
 }
 
-.townHallGraphic {
+.fistGraphic {
   width: 100%;
   transform: scale(2.5);
   z-index: -999;
@@ -223,7 +223,7 @@
 }
 
 @media (max-width: 1250px) {
-  .townHallGraphic {
+  .fistGraphic {
     transform: scale(1.8);
   }
 }
@@ -264,12 +264,12 @@
     padding: 0 2em;
   }
 
-  .townHallContainer {
+  .fistContainer {
     margin: 2em 0 6em 0;
     width: 100%;
   }
 
-  .townHallGraphic {
+  .fistGraphic {
     width: 100%;
     transform: scale(1.5);
     z-index: -999;
